@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="left">
+      <div class="top-left">
+        <h4>Your Result</h4>
+      </div>
+      <div class="middle-left">
+        <p><span id="mark">76</span> <br><span id="percentage">of 100</span></p>
+      </div>
+      <div class="bottom-left">
+        <h2>Great</h2>
+        <p>You scored higher than 65% of<br>the people who have taken<br>these tests.</p>
+      </div>
+    </section>
+    <section class="right">
+      <div class="top-right">
+        <h3>Summary</h3>
+      </div>
+      <div class="middle-right">
+        <figure id="fig-1">
+          <img src="./assets/images/icon-reaction.svg" alt="Reaction">
+          <figcaption>
+            <span class="fig-text" id="reaction">Reaction</span> <span class="fig-score"><b>80</b> <span
+                class="fig-score-gray"> / 100</span></span>
+          </figcaption>
+        </figure>
+        <figure id="fig-2">
+          <img src="./assets/images/icon-memory.svg" alt="Memory">
+          <figcaption>
+            <span class="fig-text" id="memory">Memory</span> <span class="fig-score"><b>92</b> <span
+                class="fig-score-gray"> / 100</span></span>
+          </figcaption>
+        </figure>
+        <figure id="fig-3">
+          <img src="./assets/images/icon-verbal.svg" alt="Verbal">
+          <figcaption>
+            <span class="fig-text" id="verbal">Verbal</span> <span class="fig-score"><b>61</b> <span
+                class="fig-score-gray"> / 100</span></span>
+          </figcaption>
+        </figure>
+        <figure id="fig-4">
+          <img src="./assets/images/icon-visual.svg" alt="Visual">
+          <figcaption>
+            <span class="fig-text" id="visual">Visual</span> <span class="fig-score"><b>72</b> <span
+                class="fig-score-gray"> / 100</span></span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="bottom-right">
+        <button type="submit">Continue</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
