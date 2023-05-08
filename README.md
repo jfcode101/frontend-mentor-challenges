@@ -13,7 +13,7 @@ This repository contains my solutions to Frontend Mentor challenges.
 ## Links
 
 - Result summary component - [Result summary component](https://jfcode101.github.io/frontend-mentor-challenges/results-summary/index.html)
-- Profile card component - [Profile card Challenge](https://jfcode101.github.io/frontend-mentor-challenges/profile-card-component/index.html)
+- Profile card component - [Profile card component](https://jfcode101.github.io/frontend-mentor-challenges/profile-card-component/index.html)
 
 ## Author
 
