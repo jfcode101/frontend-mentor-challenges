@@ -12,6 +12,7 @@ This repository contains my solutions to Frontend Mentor challenges.
 
 ## Links
 
+- Frontend mentor challenges - [frontend Mentor Challenges home](https://jfcode101.github.io/frontend-mentor-challenges/index.html)
 - Result summary component - [Result summary component](https://jfcode101.github.io/frontend-mentor-challenges/results-summary/index.html)
 - Profile card component - [Profile card component](https://jfcode101.github.io/frontend-mentor-challenges/profile-card-component/index.html)
 - Clipboard landing page - [Clipboard landing page](https://jfcode101.github.io/frontend-mentor-challenges/clipboard-landing-page/index.html)
