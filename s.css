@@ -8,31 +8,106 @@
 html {
     font-size: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: hsl(0, 0%, 92%);
+    /* background-color: hsl(0, 0%, 92%); */
+    letter-spacing: 1px;
 }
 
 body {
-    width: 1440px;
-    margin: auto;
+    width: 100%;
     background-color: hsl(0, 0%, 100%);
-    height: 100vh;
-}
-
-body h1 {
-    margin: 1rem 0;
+    height: auto;
 }
 
 body {
     display: flex;
     flex-flow: column;
     align-items: center;
+    color: hsl(224, 18%, 36%);
 }
 
-li {
-    padding: 10px;
+header {
+    width: 100%;
+    height: 150px;
+    background: #fff url(clipboard-landing-page/images/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    text-align: center;
+    line-height: 150px;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.main {
+    width: 1200px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main>* {
+    flex: 1;
+}
+
+.main #text h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.main #text p {
+    font-size: .9rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.main #text p span {
+    display: block;
+}
+
+.main #text p span a {
+    color: hsl(223, 13%, 11%);
+    text-underline-offset: .25rem;
+    transition: .5s ease-in-out;
+}
+.main #text p span a:hover {
+    color: hsl(224, 18%, 36%);
+    text-decoration-line: overline underline;
+    text-decoration-color: hsl(224, 18%, 36%);
+}
+
+#link {
+    /* border: 1px solid red; */
+}
+
+#link ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#link li {
+    width: 300px;
     margin-bottom: .5rem;
 }
 
-li a {
+#link li a {
+    font-size: .85rem;
+    display: block;
+    width: 100%;
+    padding: .25rem .5rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
     color: hsl(224, 18%, 36%);
+    transition: all .5s ease-in-out;
+}
+
+#link li a:hover {
+    border: 1px solid hsl(224, 18%, 36%);
+    background: hsl(0, 0%, 92%);
+    color: hsl(223, 13%, 11%);
+    box-shadow: 1px 1px 4px -1px hsl(223, 13%, 11%);
 }
