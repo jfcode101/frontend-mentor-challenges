@@ -38,6 +38,10 @@ header h1 {
     text-shadow: 1px 1px 2px #fff;
 }
 
+header h1 span {
+    font-size: 1.75rem;
+}
+
 .main {
     width: 1200px;
     padding: 2rem;
@@ -67,15 +71,17 @@ header h1 {
     display: block;
 }
 
+header h1 a,
 .main #text p span a {
     color: hsl(223, 13%, 11%);
     text-underline-offset: .25rem;
     transition: .5s ease-in-out;
 }
+
+header h1 a:hover,
 .main #text p span a:hover {
     color: hsl(224, 18%, 36%);
-    text-decoration-line: overline underline;
-    text-decoration-color: hsl(224, 18%, 36%);
+    text-decoration-color: hsl(225, 5%, 53%);
 }
 
 #link {
