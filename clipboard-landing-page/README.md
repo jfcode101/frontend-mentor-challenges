@@ -16,7 +16,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### The challenge
 
-I had a lot of fun working on this project! The only challenge was to figure out how the spaces, widths, and heights since I didn't have the original design measurements, but overall I try to make it look as close as to it as I possibly could.
+I had a lot of fun working on this project! The only challenge was to figure out the real white spaces, widths, and heights since I didn't have the original design measurements, but overall I try to make it look as close as to it as I possibly could.
 
 ### Screenshot
 
