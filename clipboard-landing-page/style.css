@@ -247,7 +247,7 @@ header #header-text,
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(159, 171, 178,.25);
+    background-color: rgba(159, 171, 178, .25);
 }
 
 .foot figure img {
@@ -267,4 +267,133 @@ header #header-text,
 
 #foot-img img:last-child {
     margin-right: 0rem;
+}
+
+@media (max-width: 920px) {
+    #header-text {
+        padding: 0 1rem;
+    }
+
+    #header-text p,
+    #sect-1 p {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+    .sect {
+        padding-right: 0;
+    }
+
+    #header-text p span,
+    #sect-1 p span {
+        display: inline;
+    }
+
+    #sect-2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #sect-2 #fig-2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    #sect-2 #fig-2 img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #sect-2 #artc-1 {
+        margin: auto 0;
+        align-items: center;
+    }
+
+    #sect-2 #artc-1 div h3,
+    #sect-2 #artc-1 div p {
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    #sect-2 #artc-1 div:last-child {
+        margin-bottom: 8rem;
+    }
+
+    #fig-3 {
+        width: 90%;
+        margin: auto;
+    }
+
+    #fig-3 img {
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+
+    #sect-4 {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 4rem;
+    }
+
+    #sect-4 p {
+        margin-bottom: 2rem;
+    }
+
+    #artc-3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sect-5 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 4rem;
+        margin-bottom: 8rem;
+    }
+
+    .foot {
+        height: auto;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .foot figure img {
+
+        margin: 4rem calc((50%)/2) 0;
+    }
+
+    .foot div ul {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .foot div ul li {
+        text-align: center;
+    }
+
+    #foot-img img:last-child {
+        margin-right: 0rem;
+    }
+
+    #foot-img {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #header-btn {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #header-btn .btn {
+        width: 100%;
+    }
 }
