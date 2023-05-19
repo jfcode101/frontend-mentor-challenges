@@ -24,8 +24,8 @@ html {
 }
 
 body {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 
 h1,
@@ -267,6 +267,21 @@ header #header-text,
 
 #foot-img img:last-child {
     margin-right: 0rem;
+}
+
+.footer-item,
+.footer-icon {
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-item:hover {
+    color: var(--strong-cyan);
+}
+
+
+.footer-icon:hover {
+  
 }
 
 @media (max-width: 920px) {
