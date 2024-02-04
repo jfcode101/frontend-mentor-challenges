@@ -37,11 +37,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.55rem;
+  font-size: 28px;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-family: "Source Code Pro", monospace;
 }
 
@@ -105,7 +105,6 @@ header h1 span {
   background-color: var(--white);
   color: var(--bunker);
   border-radius: 5px;
-  /* box-shadow: 0 4px 8px var(--bunker); */
 }
 
 .sect-content {
@@ -113,22 +112,9 @@ header h1 span {
   color: var(--white);
   padding: 1rem 0;
   cursor: pointer;
-
-  /* 
-  
-  
-  */
-
   margin-top: 1rem;
-
   display: none;
   transition: display 2s ease-in-out;
-
-  /* 
-
-
-*/
-
   border-radius: 2px;
 }
 
