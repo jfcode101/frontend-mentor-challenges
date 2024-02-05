@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 48px;
   line-height: 1.6;
 }
 
@@ -91,12 +91,10 @@ header h1 span {
 
 .text p {
   text-align: justify;
-  text-indent: 20px;
   margin-bottom: 1rem;
 }
 
 .text p:nth-child(2) {
-  text-indent: 0;
   text-align: center;
 }
 
@@ -133,7 +131,7 @@ header h1 span {
 
 .sect-content a img {
   display: block;
-  width: 60%;
+  width: 80%;
   margin: auto;
   border-radius: 8px;
   box-shadow: 0 2px 4px var(--bunker);
@@ -174,5 +172,17 @@ header h1 span {
 }
 
 .open::after {
-  content: "\2212";
+  content: "-";
+}
+
+@media screen and (min-width: 1200px) {
+  .text p,
+  .artc {
+    width: 1000px;
+  }
+
+  .text p {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 }
