@@ -22,25 +22,12 @@ html {
   font-size: 100%;
 }
 
-body {
-  background-color: var(--white);
-}
-
-input[type="number"] {
-  color: var(--dark-grayish-cyan);
-  background: var(--very-ligh-grayish-cyan);
-}
-
-button {
-  cursor: pointer;
-}
-
-button,
-input[type="number"] {
+fieldset {
   border: none;
-  outline: none;
+  margin-bottom: 1rem;
 }
 
+/* removing arrows on input */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -50,20 +37,160 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type="number"] {
-  color: var(--very-dark-cyan);
   -moz-appearance: textfield;
-  padding: 0 1rem;
-  height: 40px;
+}
+
+h5 {
+  color: var(--white);
+}
+
+.title,
+h5 {
+  font-size: 0.85rem;
+}
+
+h6 {
+  font-size: 0.7rem;
+  color: var(--grayish-cyan);
+}
+
+h2 {
+  color: var(--strong-cyan);
+  font-size: 2rem;
+}
+
+/*  --- common classes ---  */
+
+/* flex-all-center */
+.flex-col-all-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  --- common classes ---  */
+
+.wrapper {
+  background-color: var(--light-grayish-cyan);
+  width: 100%;
+  min-height: 100vh;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.calc-form {
+  width: 100%;
+  background-color: var(--white);
+  padding: 2rem 1.25rem;
+  border-radius: 20px;
+}
+
+.title {
+  color: var(--dark-grayish-cyan);
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.title:nth-last-of-type(2) {
+  margin-top: 0;
+}
+
+.user-input,
+.custom-tip,
+.btn-tip,
+.btn-reset {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+
+.user-input,
+.custom-tip {
+  background: var(--very-ligh-grayish-cyan);
+  padding: 0.5rem 1rem;
   text-align: right;
-  border: 2px solid var(--white);
-  border-radius: 4px;
-  transition: 0.3s ease-in;
+  color: var(--very-dark-cyan);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-input[type="number"]:hover {
-  border: 2px solid var(--strong-cyan);
+.user-input:hover,
+.custom-tip:hover {
+  outline: 2px solid var(--strong-cyan);
 }
 
-/* ::placeholder {
-  color: red;
-} */
+.user-input:focus,
+.custom-tip:focus {
+  outline: 2px solid var(--strong-cyan);
+}
+
+.relative {
+  position: relative;
+}
+.user-input {
+  position: relative;
+  width: 100%;
+}
+
+.relative svg {
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+}
+
+.tips {
+  /* background-color: tomato; */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.btn-tip {
+  background: var(--very-dark-cyan);
+  color: var(--very-ligh-grayish-cyan);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.btn-tip:hover {
+  color: var(--very-dark-cyan);
+  background: var(--strong-cyan);
+}
+
+.btn-tip:focus {
+  color: var(--very-dark-cyan);
+  background: var(--strong-cyan);
+}
+
+.result {
+  background-color: var(--very-dark-cyan);
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-reset {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-reset:hover {
+  background: rgba(224, 255, 255, 0.75);
+}
+
+.btn-reset:focus {
+  background: rgba(47, 219, 228, 0.2);
+}
