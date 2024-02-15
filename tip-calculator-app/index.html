@@ -34,8 +34,19 @@
       <!-- form -->
       <form action="" class="calc-form">
         <fieldset class="relative">
-          <label for="bill-input" class="title"> Bill</label>
-          <input type="number" name="bill" id="bill-input" class="user-input" />
+          <fieldset class="num-and-error">
+            <label for="bill-input" class="title">Bill</label>
+            <label for="erorr" class="title title-right">Can't be zero</label>
+          </fieldset>
+
+          <input
+            type="number"
+            name="bill"
+            id="bill-input"
+            class="user-input input-box"
+            autofocus
+            required
+          />
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="17">
             <path
               fill="#9EBBBD"
@@ -46,10 +57,10 @@
         <fieldset class="tips">
           <legend class="title">Select Tip %</legend>
           <button type="button" class="btn-tip" value="5">5%</button>
-          <button type="button" class="btn-tip" value="5">10%</button>
-          <button type="button" class="btn-tip" value="5">15%</button>
-          <button type="button" class="btn-tip" value="5">25%</button>
-          <button type="button" class="btn-tip" value="5">50%</button>
+          <button type="button" class="btn-tip" value="10">10%</button>
+          <button type="button" class="btn-tip" value="15">15%</button>
+          <button type="button" class="btn-tip" value="25">25%</button>
+          <button type="button" class="btn-tip" value="50">50%</button>
           <input
             type="number"
             name="custom-tip"
@@ -59,12 +70,18 @@
           />
         </fieldset>
         <fieldset class="relative">
-          <label for="people-input" class="title">Number of People</label>
+          <fieldset class="num-and-error">
+            <label for="people-input" class="title">Number of People</label>
+            <label for="people-input" class="title title-right"
+              >Can't be zero</label
+            >
+          </fieldset>
           <input
             type="number"
             name="bill"
             id="people-input"
-            class="user-input"
+            class="user-input input-box"
+            required
           />
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16">
             <path

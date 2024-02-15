@@ -97,6 +97,12 @@ h2 {
   margin-top: 0;
 }
 
+.num-and-error {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
 .user-input,
 .custom-tip,
 .btn-tip,
@@ -172,7 +178,7 @@ h2 {
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .result-container {
@@ -194,3 +200,12 @@ h2 {
 .btn-reset:focus {
   background: rgba(47, 219, 228, 0.2);
 }
+
+/* Triggered by error and handled by js */
+.title-right {
+  color: rgb(197, 126, 34);
+  display: none;
+}
+
+
+/* Triggered by error and handled by js*/
