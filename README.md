@@ -16,6 +16,7 @@ This repository contains my solutions to Frontend Mentor challenges.
 - Result summary component - [Result summary component](https://jfcode101.github.io/frontend-mentor-challenges/results-summary/index.html)
 - Profile card component - [Profile card component](https://jfcode101.github.io/frontend-mentor-challenges/profile-card-component/index.html)
 - Clipboard landing page - [Clipboard landing page](https://jfcode101.github.io/frontend-mentor-challenges/clipboard-landing-page/index.html)
+- tip calculator app - [Tip calculator app](https://jfcode101.github.io/frontend-mentor-challenges/tip-calculator-app/index.html)
 
 ## Author
 
