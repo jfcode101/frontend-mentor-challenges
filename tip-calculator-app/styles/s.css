@@ -162,7 +162,8 @@ h2 {
   transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
-.btn-tip:hover {
+.btn-tip:hover,
+.active {
   color: var(--very-dark-cyan);
   background: var(--strong-cyan);
 }
@@ -207,5 +208,27 @@ h2 {
   display: none;
 }
 
-
 /* Triggered by error and handled by js*/
+
+@media screen and (min-width: 1000px) {
+  .calc-form {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .result {
+    gap: 2rem;
+  }
+
+  .result-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-reset {
+    margin-top: auto;
+  }
+}
