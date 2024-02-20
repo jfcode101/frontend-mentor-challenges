@@ -222,6 +222,13 @@ h6 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .user-input,
+  .custom-tip,
+  .btn-tip,
+  .btn-reset {
+    font-size: 1.5rem;
+  }
+
   .result {
     gap: 2rem;
   }
