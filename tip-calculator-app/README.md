@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-- Desktop screenshot: ![](./images/desketop.png)
+- Desktop screenshot: ![](./images/desktop.png)
 - Mobile screenshot: ![](./images/mobile.png)
 
 ### Links
@@ -58,7 +58,7 @@ Users should be able to:
 - [MDN Web Docs](https://developer.mozilla.org/en-US/) - is a very usefully and helpfully resource. **MDN Web Docs** offers an extensive range of resources for developers. It provides in-depth documentation on web standards such as `HTML`, `CSS`, and `JavaScript`, and much more.
 
 - [w3schools](https://www.w3schools.com) - is an amazing tutorial website that has a **Try it Yourself** section allowing you to practice the subject you're currently learning.
-- [Markdown](https://www.markdownguide.org/) -  offers details lesson on writing `.md` files
+- [Markdown](https://www.markdownguide.org/) - offers details lesson on writing `.md` files
 
 ## Author
 

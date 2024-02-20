@@ -16,6 +16,13 @@ let billVal = 0,
 // populate default value
 tipSingle.innerHTML = `$0.00`;
 totalSingle.innerHTML = `$0.00`;
+// billIn.value = `0`;
+// peopleIn.value = `0`;
+
+[billIn, peopleIn].forEach((el) => {
+  el.value = `0`;
+  el.style.color = "hsl(184, 14%, 56%)";
+});
 
 btnReset.addEventListener("click", (e) => {
   e.preventDefault();
@@ -90,6 +97,7 @@ function checkInput() {
       titleRight[1].style.display = "block";
     } else {
       focusedInput.style.outline = "2px solid hsl(172, 67%, 45%)";
+      focusedInput.style.color = `hsl(183, 100%, 15%)`;
       titleRight[1].style.display = "none";
     }
   }
