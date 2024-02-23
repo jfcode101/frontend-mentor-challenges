@@ -44,130 +44,139 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    .navbar .fig-nav {
+      cursor: pointer;
+    }
 
-  .navbar .fig-nav {
-    // background-color: red;
-    cursor: pointer;
-    // height: 60px;
-    // line-height: 60px;
+    // close
+    .nav-close,
+    .nav-list {
+      display: none;
+    }
   }
 
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
 
-  // header figure
-  .fig-img {
-    width: 100%;
-    height: calc(100vh - (60px + 6rem));
-  }
-  .fig-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  // .sect {
-  // }
-
-  .sect-head {
-    .head-1 {
-      font: {
-        size: 2.5rem;
-        font-weight: 700;
-      }
-      margin-bottom: $margin-1;
-      color: $very-dark-blue;
-    }
-    .para {
-      color: $dark-grayish-blue;
-      margin-bottom: $margin-1;
+    .fig-img {
+      width: 100%;
+      height: calc(100vh - (60px + 6rem));
     }
 
-    .btn {
-      outline: none;
-      border: none;
-      color: $off-white;
-      background: $soft-red;
-      padding: 0.5rem 2rem;
-      font: {
-        size: 1rem;
-      }
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      margin-bottom: 2rem;
-    }
-  }
-
-  .sect-news {
-    background-color: $very-dark-blue;
-    color: $off-white;
-    padding: $padding-1;
-    .head-2 {
-      color: $soft-orange;
-      font-size: 1.75rem;
-      margin-bottom: 2rem;
-    }
-
-    .sect-artc {
-      padding-bottom: 2rem;
-      .head-3 {
-        font-size: 1.5rem;
-        margin-bottom: $margin-1;
-      }
-      .head-3-other {
-        margin-top: 2rem;
-      }
-    }
-
-    .sect-artc:last-child {
-      margin-bottom: -1rem;
-    }
-  }
-
-  .sect-exp {
-    height: 175px;
-    // background-color: cyan;
-    display: grid;
-    gap: $padding-1;
-
-    .sect-img {
-      grid-column: 1/1;
-      height: 175px;
-      img {
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    .artc-exp {
-      grid-column: 2 / 3;
+    .fig-img img {
+      width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      // gap: 1rem;
+      object-fit: cover;
+    }
 
-      .head-2-exp {
-        font-size: 1.75rem;
-        color: $grayish-blue;
-      }
-      .head-3-exp {
-        font-size: 1.15rem;
+    .sect {
+      margin-top: 1rem;
+    }
+
+    .sect-head {
+      .head-1 {
+        font: {
+          size: 2.5rem;
+          font-weight: 700;
+        }
+        margin-bottom: $margin-1;
         color: $very-dark-blue;
       }
-      .para-exp {
+      .para {
         color: $dark-grayish-blue;
+        margin-bottom: $margin-1;
+      }
+
+      .btn {
+        outline: none;
+        border: none;
+        color: $off-white;
+        background: $soft-red;
+        padding: 0.5rem 2rem;
+        font: {
+          size: 1rem;
+        }
+
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 300ms ease-in-out;
+      }
+
+      .btn:hover,
+      .btn:focus {
+        background: $very-dark-blue;
       }
     }
-  }
 
-  // close
-  .nav-close,
-  .nav-list {
-    display: none;
+    .sect-news {
+      background-color: $very-dark-blue;
+      color: $off-white;
+      padding: $padding-1;
+
+      .head-2 {
+        color: $soft-orange;
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+      }
+
+      .sect-artc {
+        padding-bottom: 2rem;
+
+        .head-3 {
+          font-size: 1.5rem;
+          margin-bottom: $margin-1;
+        }
+
+        .head-3-other {
+          margin-top: 2rem;
+        }
+
+        .para-artc {
+          color: $grayish-blue;
+        }
+      }
+
+      .sect-artc:last-child {
+        margin-bottom: -1rem;
+      }
+    }
+
+    .sect-exp {
+      height: 175px;
+      display: flex;
+      gap: $padding-1;
+
+      .sect-img {
+        height: 175px;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .artc-exp {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+
+        .head-2-exp {
+          font-size: 1.75rem;
+          color: $grayish-blue;
+        }
+        .head-3-exp {
+          font-size: 1.15rem;
+          color: $very-dark-blue;
+        }
+        .para-exp {
+          color: $dark-grayish-blue;
+        }
+      }
+    }
   }
 }
