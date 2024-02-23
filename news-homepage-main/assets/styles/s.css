@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+    VARIABLES : Colors
+*/
+html {
+  font-size: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body .header,
+body .wrapper {
+  width: 90%;
+  margin: 2rem auto 0;
+}
+body .header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .navbar .fig-nav {
+  cursor: pointer;
+}
+body .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+body .fig-img {
+  width: 100%;
+  height: calc(100vh - (60px + 6rem));
+}
+body .fig-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .sect-head .head-1 {
+  font-size: 2.5rem;
+  font-font-weight: 700;
+  margin-bottom: 1rem;
+  color: hsl(240, 100%, 5%);
+}
+body .sect-head .para {
+  color: hsl(236, 13%, 42%);
+  margin-bottom: 1rem;
+}
+body .sect-head .btn {
+  outline: none;
+  border: none;
+  color: hsl(36, 100%, 99%);
+  background: hsl(5, 85%, 63%);
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+body .sect-news {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 1rem;
+}
+body .sect-news .head-2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+body .sect-news .sect-artc {
+  padding-bottom: 2rem;
+}
+body .sect-news .sect-artc .head-3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+body .sect-news .sect-artc .head-3-other {
+  margin-top: 2rem;
+}
+body .sect-news .sect-artc:last-child {
+  margin-bottom: -1rem;
+}
+body .sect-exp {
+  height: 175px;
+  display: grid;
+  gap: 1rem;
+}
+body .sect-exp .sect-img {
+  grid-column: 1/1;
+  height: 175px;
+}
+body .sect-exp .sect-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .sect-exp .artc-exp {
+  grid-column: 2/3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .sect-exp .artc-exp .head-2-exp {
+  font-size: 1.75rem;
+  color: hsl(233, 8%, 79%);
+}
+body .sect-exp .artc-exp .head-3-exp {
+  font-size: 1.15rem;
+  color: hsl(240, 100%, 5%);
+}
+body .sect-exp .artc-exp .para-exp {
+  color: hsl(236, 13%, 42%);
+}
+body .nav-close,
+body .nav-list {
+  display: none;
+}/*# sourceMappingURL=s.css.map */
