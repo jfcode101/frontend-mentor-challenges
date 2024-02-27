@@ -33,39 +33,38 @@ body
     background-color: $dark-slate-grey
     margin: auto
 
-
-
 .container 
-    height: 100vh
+    background-color: $dark-slate-grey
+    width: 100%
+
+.head-one
+    margin-bottom: $one-rem
+    font:
+        size: 2.75rem
+        weight: 700
+    color: $dark-slate-grey
+
+.para
+    font:
+        size: $one-rem
+        weight: 400
+    line-height: 1.6
+
+.para, li
+    color: $charcoal-grey
 
 
-.sect-signup
+.sect-signup, .artc-success
     height: 100vh
     margin: auto
     background-color: $white
 
+.sect-signup
     .header, ul, .form-signup
         padding: $one-rem
 
     .header
         margin: $one-rem 0
-
-        .head-one
-            margin-bottom: $one-rem
-            font:
-                size: 2.75rem
-                weight: 700
-            color: $dark-slate-grey
-
-        .para
-            font:
-                size: $one-rem
-                weight: 400
-            line-height: 1.6
-
-
-    .para, li
-            color: $charcoal-grey
 
     ul
         li
@@ -75,8 +74,7 @@ body
             padding-bottom: $one-rem
 
     .form-signup
-        // background-color: tomato
-
+        background-color: $white
         fieldset
             border: none
             
@@ -100,30 +98,42 @@ body
                 border: 1px solid $dark-slate-grey
                 color: $dark-slate-grey
          
-        #email, #submit-input 
-            width: 100%
-            outline: 0
-            border-radius: 8px
-            padding: $one-rem
+#email, .submit-input 
+    width: 100%
+    outline: 0
+    border-radius: 8px
+    padding: $one-rem
 
 
+.submit-input
+    border: none
+    font: 
+        family: $font-fam
+        size: 1rem
+    background: $dark-slate-grey
+    color: $white
+    cursor: pointer
+    transition: background-image 300ms ease-in-out
+    
 
-        #submit-input
-            border: none
-            font: 
-                family: $font-fam
-                size: 1rem
-            background: $dark-slate-grey
-            color: $white
-            cursor: pointer
-            transition: background-image 300ms ease-in-out
+.submit-input:focus, .submit-input:hover
+    background-image: linear-gradient(90deg, #ff596c, $tomato, #ff6a3a)
+    box-shadow: 0px 10px 30px $tomato
             
 
-        #submit-input:focus, #submit-input:hover
-            background-image: linear-gradient(90deg, #ff596c, $tomato, #ff6a3a)
-            box-shadow: 0px 10px 30px $tomato
-            
+.artc-success
+    display: flex
+    flex-flow: column
+    align-items: center
+    justify-content: space-around
+    padding: $one-rem $one-rem 3rem
 
-    
-    
-  
+    .artc-header
+        margin-top: 8rem
+
+        img, .head-one
+            margin-bottom: 2rem
+
+    .submit-input
+        margin-top: auto
+        align-self: flex-end

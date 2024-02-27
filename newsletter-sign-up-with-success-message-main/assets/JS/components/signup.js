@@ -35,7 +35,7 @@ export class Signup extends HTMLElement {
                     <legend>Email address</legend>
                     <input type="text" id="email" placeholder="email@company.com">
                 <fieldset>
-                <input type="submit" value="Subscribe to monthly newsletter" id="submit-input">
+                <input type="submit" value="Subscribe to monthly newsletter" class="submit-input">
             </form>
         </section">
 

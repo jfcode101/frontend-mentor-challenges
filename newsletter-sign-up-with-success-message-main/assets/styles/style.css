@@ -16,39 +16,47 @@ body {
 }
 
 .container {
-  height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+  width: 100%;
 }
 
-.sect-signup {
+.head-one {
+  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+
+.para {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.para, li {
+  color: hsl(235, 18%, 26%);
+}
+
+.sect-signup, .artc-success {
   height: 100vh;
   margin: auto;
   background-color: hsl(0, 0%, 100%);
 }
+
 .sect-signup .header, .sect-signup ul, .sect-signup .form-signup {
   padding: 1rem;
 }
 .sect-signup .header {
   margin: 1rem 0;
 }
-.sect-signup .header .head-one {
-  margin-bottom: 1rem;
-  font-size: 2.75rem;
-  font-weight: 700;
-  color: hsl(234, 29%, 20%);
-}
-.sect-signup .header .para {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6;
-}
-.sect-signup .para, .sect-signup li {
-  color: hsl(235, 18%, 26%);
-}
 .sect-signup ul li {
   list-style-type: none;
   display: flex;
   gap: 1rem;
   padding-bottom: 1rem;
+}
+.sect-signup .form-signup {
+  background-color: hsl(0, 0%, 100%);
 }
 .sect-signup .form-signup fieldset {
   border: none;
@@ -72,13 +80,15 @@ body {
   border: 1px solid hsl(234, 29%, 20%);
   color: hsl(234, 29%, 20%);
 }
-.sect-signup .form-signup #email, .sect-signup .form-signup #submit-input {
+
+#email, .submit-input {
   width: 100%;
   outline: 0;
   border-radius: 8px;
   padding: 1rem;
 }
-.sect-signup .form-signup #submit-input {
+
+.submit-input {
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -87,7 +97,26 @@ body {
   cursor: pointer;
   transition: background-image 300ms ease-in-out;
 }
-.sect-signup .form-signup #submit-input:focus, .sect-signup .form-signup #submit-input:hover {
+
+.submit-input:focus, .submit-input:hover {
   background-image: linear-gradient(90deg, #ff596c, hsl(4, 100%, 67%), #ff6a3a);
   box-shadow: 0px 10px 30px hsl(4, 100%, 67%);
+}
+
+.artc-success {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 1rem 3rem;
+}
+.artc-success .artc-header {
+  margin-top: 8rem;
+}
+.artc-success .artc-header img, .artc-success .artc-header .head-one {
+  margin-bottom: 2rem;
+}
+.artc-success .submit-input {
+  margin-top: auto;
+  align-self: flex-end;
 }/*# sourceMappingURL=style.css.map */
