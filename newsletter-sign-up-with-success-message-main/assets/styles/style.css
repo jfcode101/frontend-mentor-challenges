@@ -2,4 +2,92 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 375px;
+  background-color: hsl(234, 29%, 20%);
+  margin: auto;
+}
+
+.container {
+  height: 100vh;
+}
+
+.sect-signup {
+  height: 100vh;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+}
+.sect-signup .header, .sect-signup ul, .sect-signup .form-signup {
+  padding: 1rem;
+}
+.sect-signup .header {
+  margin: 1rem 0;
+}
+.sect-signup .header .head-one {
+  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+.sect-signup .header .para {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.sect-signup .para, .sect-signup li {
+  color: hsl(235, 18%, 26%);
+}
+.sect-signup ul li {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.sect-signup .form-signup fieldset {
+  border: none;
+}
+.sect-signup .form-signup fieldset legend {
+  font-family: "Roboto", sans-serif;
+  color: hsl(234, 29%, 20%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.sect-signup .form-signup fieldset #email {
+  outline: 0;
+  border: 1px solid hsl(231, 7%, 60%);
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  transition: border 300ms ease-in-out, color 300ms ease-in-out;
+  color: hsl(235, 18%, 26%);
+}
+.sect-signup .form-signup fieldset #email:hover, .sect-signup .form-signup fieldset #email:focus {
+  border: 1px solid hsl(234, 29%, 20%);
+  color: hsl(234, 29%, 20%);
+}
+.sect-signup .form-signup #email, .sect-signup .form-signup #submit-input {
+  width: 100%;
+  outline: 0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.sect-signup .form-signup #submit-input {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: background-image 300ms ease-in-out;
+}
+.sect-signup .form-signup #submit-input:focus, .sect-signup .form-signup #submit-input:hover {
+  background-image: linear-gradient(90deg, #ff596c, hsl(4, 100%, 67%), #ff6a3a);
+  box-shadow: 0px 10px 30px hsl(4, 100%, 67%);
 }/*# sourceMappingURL=style.css.map */

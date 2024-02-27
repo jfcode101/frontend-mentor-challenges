@@ -1,5 +1,129 @@
-* , *::before, *::after
+
+// Variables
+// ----------
+// Colors
+$tomato: hsl(4, 100%, 67%)
+
+// Neutral colors
+$dark-slate-grey: hsl(234, 29%, 20%)
+$charcoal-grey: hsl(235, 18%, 26%)
+$grey: hsl(231, 7%, 60%)
+$white: hsl(0, 0%, 100%)    
+
+// space
+$one-rem : 1rem
+
+// Font
+$font-fam: "Roboto", sans-serif
+
+    
+*, *::before, *::after
     box-sizing: border-box
     margin: 0
     padding: 0
+    font-family: $font-fam
+    
+  
 
+html
+    font-size: 16px
+
+body
+    width: 375px
+    background-color: $dark-slate-grey
+    margin: auto
+
+
+
+.container 
+    height: 100vh
+
+
+.sect-signup
+    height: 100vh
+    margin: auto
+    background-color: $white
+
+    .header, ul, .form-signup
+        padding: $one-rem
+
+    .header
+        margin: $one-rem 0
+
+        .head-one
+            margin-bottom: $one-rem
+            font:
+                size: 2.75rem
+                weight: 700
+            color: $dark-slate-grey
+
+        .para
+            font:
+                size: $one-rem
+                weight: 400
+            line-height: 1.6
+
+
+    .para, li
+            color: $charcoal-grey
+
+    ul
+        li
+            list-style-type: none
+            display: flex
+            gap: $one-rem
+            padding-bottom: $one-rem
+
+    .form-signup
+        // background-color: tomato
+
+        fieldset
+            border: none
+            
+            legend
+                font-family: $font-fam
+                color: $dark-slate-grey
+                font:
+                    size: .75rem
+                    weight: 700
+                margin-bottom: .5rem
+
+            #email 
+                outline: 0
+                border: 1px solid $grey
+                font-family: $font-fam
+                margin-bottom: $one-rem
+                transition: border 300ms ease-in-out, color 300ms ease-in-out
+                color: $charcoal-grey
+
+            #email:hover, #email:focus
+                border: 1px solid $dark-slate-grey
+                color: $dark-slate-grey
+         
+        #email, #submit-input 
+            width: 100%
+            outline: 0
+            border-radius: 8px
+            padding: $one-rem
+
+
+
+        #submit-input
+            border: none
+            font: 
+                family: $font-fam
+                size: 1rem
+            background: $dark-slate-grey
+            color: $white
+            cursor: pointer
+            transition: background-image 300ms ease-in-out
+            
+
+        #submit-input:focus, #submit-input:hover
+            background-image: linear-gradient(90deg, #ff596c, $tomato, #ff6a3a)
+            box-shadow: 0px 10px 30px $tomato
+            
+
+    
+    
+  
