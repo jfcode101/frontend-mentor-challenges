@@ -14,12 +14,21 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+body ul,
+body li {
+  list-style-type: none;
+}
+body a {
+  text-decoration: none;
+}
 body .header,
 body .wrapper {
   width: 90%;
   margin: 2rem auto 0;
 }
 body .header {
+  position: relative;
+  background-color: tomato;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -28,14 +37,24 @@ body .header {
 body .header .navbar .fig-nav {
   cursor: pointer;
 }
-body .header .nav-close,
-body .header .nav-list {
+body .header .nav-close {
   display: none;
+}
+body .header #check-list {
+  display: none;
+}
+body .header .nav-list .nav-item {
+  background-color: hsl(36, 100%, 99%);
+  padding-left: 1rem;
+}
+body .header .nav-list .nav-item .nav-link {
+  color: hsl(240, 100%, 5%);
 }
 body .wrapper {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 body .wrapper .fig-img {
   width: 100%;

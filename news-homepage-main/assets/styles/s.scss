@@ -32,6 +32,13 @@ html {
 }
 
 body {
+  ul,
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
   // header and main
   .header,
   .wrapper {
@@ -39,19 +46,39 @@ body {
     margin: 2rem auto 0;
   }
   .header {
-    // background-color: tomato;
+    position: relative;
+    background-color: tomato;
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .navbar .fig-nav {
       cursor: pointer;
     }
 
     // close
-    .nav-close,
-    .nav-list {
+    .nav-close {
       display: none;
+    }
+
+    // check list
+    #check-list {
+      display: none;
+    }
+
+    // nav list
+    .nav-list {
+      // display: none;
+
+      // nav item
+      .nav-item {
+        background-color: $off-white;
+        padding-left: 1rem;
+        .nav-link {
+          color: $very-dark-blue;
+        }
+      }
     }
   }
 
@@ -59,6 +86,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 4rem;
 
     .fig-img {
       width: 100%;
