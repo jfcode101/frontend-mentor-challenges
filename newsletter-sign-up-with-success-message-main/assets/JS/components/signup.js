@@ -32,8 +32,11 @@ export class Signup extends HTMLElement {
             </ul>
             <form class="form-signup">
                 <fieldset>
-                    <legend>Email address</legend>
-                    <input type="text" id="email" placeholder="email@company.com">
+                    <span class="arrange">
+                        <legend>Email address</legend>
+                        <span id="error">Valid email required</span>
+                    </span>
+                    <input  type="email" id="email" placeholder="email@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 <fieldset>
                 <input type="submit" value="Subscribe to monthly newsletter" class="submit-input">
             </form>

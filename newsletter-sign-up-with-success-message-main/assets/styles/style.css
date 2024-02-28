@@ -61,12 +61,21 @@ body {
 .sect-signup .form-signup fieldset {
   border: none;
 }
-.sect-signup .form-signup fieldset legend {
+.sect-signup .form-signup fieldset .arrange {
+  display: flex;
+  justify-content: space-between;
+}
+.sect-signup .form-signup fieldset .arrange legend, .sect-signup .form-signup fieldset .arrange #error {
   font-family: "Roboto", sans-serif;
   color: hsl(234, 29%, 20%);
   font-size: 0.75rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+.sect-signup .form-signup fieldset .arrange #error {
+  display: none;
+  color: hsl(4, 100%, 67%);
+  text-align: right;
 }
 .sect-signup .form-signup fieldset #email {
   outline: 0;

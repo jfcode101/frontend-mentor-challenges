@@ -77,14 +77,22 @@ body
         background-color: $white
         fieldset
             border: none
-            
-            legend
-                font-family: $font-fam
-                color: $dark-slate-grey
-                font:
-                    size: .75rem
-                    weight: 700
-                margin-bottom: .5rem
+
+            .arrange
+                display: flex
+                justify-content: space-between
+                legend, #error
+                    font-family: $font-fam
+                    color: $dark-slate-grey
+                    font:
+                        size: .75rem
+                        weight: 700
+                    margin-bottom: .5rem
+
+                #error 
+                    display: none
+                    color: $tomato
+                    text-align: right
 
             #email 
                 outline: 0
